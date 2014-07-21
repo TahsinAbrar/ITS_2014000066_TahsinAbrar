@@ -113,7 +113,7 @@
 
 	function addTwoNumbers(num1,num2){
 		//var sum = num1+num2;
-		var sum = arguments[0]+arguments[1];
+		sum = arguments[0]+arguments[1];
 		return sum;
 	}
 	//function call
@@ -132,6 +132,8 @@
 	console.log((function(){
 		return arguments[0]+arguments[1]+arguments[2];
 		}) (3,4,5));
+
+	console.log(sum);
 </script>
 <body>Hello world
 </body>
