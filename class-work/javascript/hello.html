@@ -97,7 +97,7 @@
 	var aVar=null; //false
 	var aVar=''; //false
 	var aVar=false;
-	
+
 	var aVar = 'string'; //true
 	var aVar= 123; //true
 	var aVar='0'; //true
@@ -109,6 +109,15 @@
 		console.log('I am treated as false ')
 	}
 
+	//declaration of a function
+
+	function addTwoNumbers(){
+		var sum = 2+3;
+		return sum;
+	}
+	//function call
+	var result = addTwoNumbers();
+	console.log("Sum = "+result);
 
 </script>
 <body>Hello world
