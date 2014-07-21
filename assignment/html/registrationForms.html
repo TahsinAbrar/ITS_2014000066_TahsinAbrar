@@ -2,13 +2,14 @@
 <html>
 	<head>
 		<title>Registration Form</title>
+		<meta charset="UTF-8">
 	</head>
 	<body>
 		<h1>Registration Form</h1>
 		<form action="" method="GET" id="regForm">
 			<fieldset>
 				<legend>Personal Information</legend>
-				<label for="">First Name: </label>
+				<label for="firstName">First Name: </label>
 				<input type="text" 
 					   name="firstNameText"
 					   id="firstName"
@@ -16,7 +17,7 @@
 					   tabindex="1"
 					   autofocus="autofocus"
 					   required="required"/><br/>
-				<label for="">Last Name: </label>
+				<label for="lastName">Last Name: </label>
 				<input type="text" 
 					   name="lastNameText"
 					   id="lastName"
@@ -31,15 +32,16 @@
 				<input type="radio" name="gender" 
 									value="female" />Female
 				<br/>
-				<label>Present Address : </label>
+				<label for="presentAddress">Present Address : </label>
 				<textarea rows="3" 
 						  cols="25" 
 						  wrap="soft"
 					   	  required="required" 
+					   	  id="presentAddress"
 					   	  tabindex="4">
 				</textarea><br/>
-				<label>Age (18-35) :</label>
-  				<input type="number" name="age" step="1" value="24" min="18" max="35" tabindex="5"><br/>
+				<label for="age">Age (18-35) :</label>
+  				<input type="number" name="ageText" step="1" value="24" id="age" min="18" max="35" tabindex="5"><br/>
   				<label for="email">Email : </label>
   				<input type="email" name="emailText" id="email" tabindex="6"/>
 			</fieldset>
@@ -51,12 +53,16 @@
 				<input type="checkbox" name="skill" value="java" tabindex="9" />Java
 				<input type="checkbox" name="skill" value="python" tabindex="10" />Python
 				<br/>
-				<label>Occupation : </label>
+				<label for="occupation">Occupation : </label>
 				<select id="occupation" tabindex="11">
 					<option value="student">Student</option>
 					<option value="trainee">Trainee</option>
-					<option value="employee">Employee</option>
 					<option value="businessman">Business Man</option>
+  					<optgroup label="Employee">
+						<option value="junior">Junior Developer</option>
+						<option value="midlevel">Mid-Level Developer</option>
+						<option value="senior">Senior Developer</option>
+					</optgroup>
 				</select><br/>
 
 			</fieldset>
@@ -69,8 +75,8 @@
 		</form>
 		<fieldset>
 			<legend>Feedback </legend>
-			<label>Your Feedback Score : </label>
-			<input type="number" name="feedback" form="regForm" value="5" min="1" max="5" tabindex="14">
+			<label for="feedback">Your Feedback Score : </label>
+			<input type="number" name="feedbackText" id="feedback" form="regForm" value="5" min="1" max="5" tabindex="14">
 		</fieldset>
 	</body>
 </html>
