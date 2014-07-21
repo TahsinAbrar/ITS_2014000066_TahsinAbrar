@@ -36,23 +36,23 @@
 						  cols="25" 
 						  wrap="soft"
 					   	  required="required" 
-					   	  tabindex="11">
+					   	  tabindex="4">
 				</textarea><br/>
 				<label>Age (18-35) :</label>
-  				<input type="number" name="age" step="1" value="24" min="18" max="35"><br/>
+  				<input type="number" name="age" step="1" value="24" min="18" max="35" tabindex="5"><br/>
   				<label for="email">Email : </label>
-  				<input type="email" name="emailText" id="email" />
+  				<input type="email" name="emailText" id="email" tabindex="6"/>
 			</fieldset>
 			<fieldset>
 				<legend>Working Information</legend>
 				<label>Skillset : </label>
-				<input type="checkbox" name="skill" value="php" checked="checked" tabindex="4"/>PHP
-				<input type="checkbox" name="skill" value="csharp" tabindex="5" />C#
-				<input type="checkbox" name="skill" value="java" tabindex="6" />Java
-				<input type="checkbox" name="skill" value="python" tabindex="7" />Python
+				<input type="checkbox" name="skill" value="php" checked="checked" tabindex="7"/>PHP
+				<input type="checkbox" name="skill" value="csharp" tabindex="8" />C#
+				<input type="checkbox" name="skill" value="java" tabindex="9" />Java
+				<input type="checkbox" name="skill" value="python" tabindex="10" />Python
 				<br/>
 				<label>Occupation : </label>
-				<select id="occupation" tabindex="8">
+				<select id="occupation" tabindex="11">
 					<option value="student">Student</option>
 					<option value="trainee">Trainee</option>
 					<option value="employee">Employee</option>
@@ -62,15 +62,15 @@
 			</fieldset>
 			<input type="submit" name="submitButton" 
 								 value="Submit" 
-								 tabindex=""/>
+								 tabindex="12"/>
 			<input type="reset" name="resetButton" 
 								 value="Reset" 
-								 tabindex=""/>
+								 tabindex="13"/>
 		</form>
 		<fieldset>
 			<legend>Feedback </legend>
 			<label>Your Feedback Score : </label>
-			<input type="number" name="feedback" form="regForm" value="5" min="1" max="5">
+			<input type="number" name="feedback" form="regForm" value="5" min="1" max="5" tabindex="14">
 		</fieldset>
 	</body>
 </html>
