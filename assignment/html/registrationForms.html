@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Registration Form</title>
+	</head>
+	<body>
+		<h1>Registration Form</h1>
+		<form action="" method="GET" id="regForm">
+			<fieldset>
+				<legend>Personal Information</legend>
+				<label for="">First Name: </label>
+				<input type="text" 
+					   name="firstNameText"
+					   id="firstName"
+					   placeholder="e.g. Jim"
+					   tabindex="1"
+					   autofocus="autofocus"
+					   required="required"/><br/>
+				<label for="">Last Name: </label>
+				<input type="text" 
+					   name="lastNameText"
+					   id="lastName"
+					   placeholder="e.g. Collins"
+					   required="required"
+					   tabindex="2"/><br/>
+				<label>Gender : </label>	
+				<input type="radio" name="gender" 
+									value="male" 
+									checked="checked" 
+									tabindex="3"/>Male
+				<input type="radio" name="gender" 
+									value="female" />Female
+				<br/>
+				<label>Present Address : </label>
+				<textarea rows="3" 
+						  cols="25" 
+						  wrap="soft"
+					   	  required="required" 
+					   	  tabindex="11">
+				</textarea><br/>
+				<label>Age (18-35) :</label>
+  				<input type="number" name="age" step="1" value="24" min="18" max="35"><br/>
+  				<label for="email">Email : </label>
+  				<input type="email" name="emailText" id="email" />
+			</fieldset>
+			<fieldset>
+				<legend>Working Information</legend>
+				<label>Skillset : </label>
+				<input type="checkbox" name="skill" value="php" checked="checked" tabindex="4"/>PHP
+				<input type="checkbox" name="skill" value="csharp" tabindex="5" />C#
+				<input type="checkbox" name="skill" value="java" tabindex="6" />Java
+				<input type="checkbox" name="skill" value="python" tabindex="7" />Python
+				<br/>
+				<label>Occupation : </label>
+				<select id="occupation" tabindex="8">
+					<option value="student">Student</option>
+					<option value="trainee">Trainee</option>
+					<option value="employee">Employee</option>
+					<option value="businessman">Business Man</option>
+				</select><br/>
+
+			</fieldset>
+			<input type="submit" name="submitButton" 
+								 value="Submit" 
+								 tabindex=""/>
+			<input type="reset" name="resetButton" 
+								 value="Reset" 
+								 tabindex=""/>
+		</form>
+		<fieldset>
+			<legend>Feedback </legend>
+			<label>Your Feedback Score : </label>
+			<input type="number" name="feedback" form="regForm" value="5" min="1" max="5">
+		</fieldset>
+	</body>
+</html>
