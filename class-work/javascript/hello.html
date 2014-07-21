@@ -111,12 +111,13 @@
 
 	//declaration of a function
 
-	function addTwoNumbers(){
-		var sum = 2+3;
+	function addTwoNumbers(num1,num2){
+		//var sum = num1+num2;
+		var sum = arguments[0]+arguments[1];
 		return sum;
 	}
 	//function call
-	var result = addTwoNumbers();
+	var result = addTwoNumbers(4,3);
 	console.log("Sum = "+result);
 
 </script>
