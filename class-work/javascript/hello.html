@@ -10,7 +10,8 @@
 	//defining variable
 	var aVariable =121;
 	anotherVariable =222;
-	var aStringVariable = "Hello FTFL";
+	var aStringVariable = "Hello FTFL, ";
+	var anotherStringVariable = "how are you?";
 	var aNumberLikeStringVariable ='1111';
 	var aBoolean = true;
 	var anEmptyValue="";//''
@@ -66,6 +67,18 @@
 
 	console.log("aStringVariable" in window); //true
 	console.log("jahangir" in window); //true
+	//Overloaded + operator
+	//two numbers
+	console.log(aVariable+anotherVariable);
+	//two strings
+	console.log(aStringVariable+anotherStringVariable);
+	//a number + a String
+	console.log(aVariable+aNumberLikeStringVariable);
+	var aMultipliedVal = aVariable* anotherStringVariable;
+	console.log(aMultipliedVal);
+	console.log(typeof aMultipliedVal);
+
+	console.log(isNaN(aMultipliedVal)); 
 </script>
 <body>Hello world
 </body>
