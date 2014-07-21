@@ -92,6 +92,24 @@
 	console.log(parseInt('123'));
 	console.log(parseInt('123.12'));
 
+	var aVar; //undefined = false
+	var aVar= 0; //false
+	var aVar=null; //false
+	var aVar=''; //false
+	var aVar=false;
+	
+	var aVar = 'string'; //true
+	var aVar= 123; //true
+	var aVar='0'; //true
+	var aVar=' '; //false
+	if(aVar){
+		console.log('I am treated as true ');
+	}
+	else{
+		console.log('I am treated as false ')
+	}
+
+
 </script>
 <body>Hello world
 </body>
