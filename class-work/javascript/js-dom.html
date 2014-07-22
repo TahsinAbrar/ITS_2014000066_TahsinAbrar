@@ -183,7 +183,10 @@
 	;(function(){
 		try{
 			var allABBR = window.document.getElementsByTagName('abbr');
-			console.log(allABBR);
+			var count=allABBR.length;
+			for(i=0;i<count;i++)
+			// console.log(allABBR[i].innerHTML);
+			console.log(allABBR[i].innerHTML);
 		}catch(e){
 			console.log(e.message);
 		}
