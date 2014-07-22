@@ -186,7 +186,15 @@
 			var count=allABBR.length;
 			for(i=0;i<count;i++)
 			// console.log(allABBR[i].innerHTML);
-			console.log(allABBR[i].innerHTML);
+			//console.log(allABBR[i].nodeType);
+			//console.log(allABBR[i].firstChild.nodeValue);
+			console.log(allABBR[i].childNodes[0].nodeValue);
+
+			var zenSummary = document.getElementById("zen-summary");
+		console.log(zenSummary.innerHTML);
+		zenSummary.innerHTML= "<b>Hello I've replaced you.</b>";
+		zenSummary.setAttribute('style','background-color:red');
+		//zenSummary.setAttribute('style','display:none');
 		}catch(e){
 			console.log(e.message);
 		}
