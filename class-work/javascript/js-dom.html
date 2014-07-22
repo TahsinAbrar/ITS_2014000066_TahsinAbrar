@@ -184,22 +184,34 @@
 		try{
 			var allABBR = window.document.getElementsByTagName('abbr');
 			var count=allABBR.length;
-			for(i=0;i<count;i++)
+			var str="<ul>";
+			for(i=0;i<count;i++){
 			// console.log(allABBR[i].innerHTML);
 			//console.log(allABBR[i].nodeType);
 			//console.log(allABBR[i].firstChild.nodeValue);
-			console.log(allABBR[i].childNodes[0].nodeValue);
 
+			// Problem with this code
+			console.log(allABBR[i].childNodes[0].nodeValue);
+			strUl += "<li>"+allABBR[i].innerHTML+"</li>";
+			}
+			strUl += "</ul>";
+			var li = document.createElement('LI');
+			li.appendChild(allABBR[i].innerHTML);
+			var ul = document.createElement('UL');
 			var zenSummary = document.getElementById("zen-summary");
-		console.log(zenSummary.innerHTML);
-		zenSummary.innerHTML= "<b>Hello I've replaced you.</b>";
-		zenSummary.setAttribute('style','background-color:red');
-		//zenSummary.setAttribute('style','display:none');
-		}catch(e){
+			console.log(zenSummary.innerHTML);
+			zenSummary.innerHTML += strUl;
+
+			//zenSummary.innerHTML= "<b>Hello I've replaced you.</b>";
+			//zenSummary.setAttribute('style','background-color:red');
+			//zenSummary.setAttribute('style','display:none');
+			}catch(e){
 			console.log(e.message);
+			// Problem with this code
 		}
 	})();
 
+	//dynamically element
 </script>
 </body>
 </html>
