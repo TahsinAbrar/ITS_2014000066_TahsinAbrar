@@ -25,4 +25,20 @@
 	console.log(typeof fruits);
 	console.log(fruits.name);
 	console.log(fruits.satisfy());
+	//objects are called associative
+	var student={
+		name:'bappa',
+		id:'FTFL007',
+		email:'bappa@ftfl.com',
+		tools:{
+			laptop:false,
+			desktop:{
+				monitor:'17inches',
+				cpu:'Corei5'
+			}
+		}
+	}
+	console.log(student.tools.desktop.monitor);
+	console.log(student['tools']['desktop']['monitor']);
+		
 </script>
