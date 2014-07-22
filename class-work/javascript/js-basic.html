@@ -152,21 +152,26 @@
 	function aSampleFunction() {
 		
 	}
-	//self executing function
-	;(function(){
+	//bullet proof self executing function
+	//;(function(){
 
-	})();
-	console.log(aSampleFunction());
+	//})();
+	//console.log(aSampleFunction());
 
 	//another closure example
-	function init() {
+
+	/*function init() {
 		var name="Mozilla"; // name is a local variable created by init function
 		function displayName() { //displayName() is the inner function, a closure
 			alert(name); //displayName() usues variable declared in the parent function.
 		}
 		displayName();
 	}
-	init();
+	init();*/
+
+	//function constructor
+	var func = new Function("x", "y", "z", "return x*y*z");
+	console.log(func(2,5,6));
 </script>
 <body>Hello world
 </body>
