@@ -46,11 +46,11 @@
 		this.make=make;
 		this.model=model;
 		this.year=year;
-		this.drive= function(){
+		this.drive= drive;
+	}
+	function drive(){
 			return "I am driving "+this.make;
 		}
-	}
-	
 
 	var mycar1 = new Cars('Toyota','Talon TSi','1983');
 	var mycar2 = new Cars('Mazda','Miata','1990');
