@@ -40,5 +40,22 @@
 	}
 	console.log(student.tools.desktop.monitor);
 	console.log(student['tools']['desktop']['monitor']);
+
+	//Defining Object using a constructor function
+	function Cars(make,model,year){
+		this.make=make;
+		this.model=model;
+		this.year=year;
+		this.drive= function(){
+			return "I am driving "+this.make;
+		}
+	}
+	
+
+	var mycar1 = new Cars('Toyota','Talon TSi','1983');
+	var mycar2 = new Cars('Mazda','Miata','1990');
+	console.log(typeof mycar2);
+	console.log(mycar2.make);
+	console.log(mycar2.drive());
 		
 </script>
