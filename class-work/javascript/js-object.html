@@ -1,5 +1,5 @@
 <script>
-	//Defining an object using
+	//Defining an object using Constructor
 	var Car = new Object();
 	Car.name="Audi";
 	Car.wheel=4;
@@ -57,5 +57,22 @@
 	console.log(typeof mycar2);
 	console.log(mycar2.make);
 	console.log(mycar2.drive());
-		
+
+	var aCar = Car;
+	var bCar = Car;
+
+	aCar.run=function(){
+		alert('I am running');
+	}
+	aCar.run();
+	bCar.run();
+	// Defining Object using Object.create() method
+
+	// var Person = {}
+	var Person= {
+		kind:'human'
+	}
+	var sajia = Object.create(Person, {age:{value:13}});
+	console.log(sajia.kind);
+	console.log(sajia.age);
 </script>
