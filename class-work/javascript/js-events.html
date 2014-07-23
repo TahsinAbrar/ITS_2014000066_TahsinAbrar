@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Understanding Event & Event handler registration</title>
+</head>
+<body>
+	<div class="explanation" id="zen-explanation" role="article">
+		<h3>So What is This About?</h3>
+		<p>There is a continuing need to show the power of <abbr title="Cascading Style Sheets">CSS</abbr>. </p>
+		<p><abbr title="Cascading Style Sheets">CSS</abbr> allows complete and total control over the style of a hypertext document.</p>
+	</div>
+	<div>
+		<img src="images/photo-1.jpg" alt="game" width="200" height="100">
+		<img src="images/photo-2.jpg" alt="nature" width="200" height="100">
+		<img src="images/photo-3.jpg" alt="abstract" width="200" height="100">
+	</div>
+	<nav role="navigation">
+		<ul>
+			<li class="next"><a href="#">Mid century</a></li>
+			<li class="viewall"><a href="#">Garments</a></li>
+			<li class="viewall"><a href="#">Steel</a></li>
+		</ul>
+	</nav>
+<input type="text" name="event" id="eventCheck" onclick="hello();" />	
+
+<script>
+	;(function() {
+		alert("hello");
+	}
+</script>
+</body>
+</html>
