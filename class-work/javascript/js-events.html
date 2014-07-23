@@ -31,10 +31,24 @@
 	</nav>
 	<form>
 		<input id="fullName" name="fullName" />
-		<button name="btnToClick" onclick="alert('I\'m clicked.');return false;">Click me!</button>			
+		<button name="btnToClick" onclick="return validateName();">Click me!</button>			
 	</form>
 
 <script>
+function validateName() {
+	var fullName = document.getElementById('fullName').value;
+	//alert(fullName);
+	if(fullName==""){
+		alert("Please Enter your Name: ");
+		return false;
+	}
+	else{
+		alert("Thank you "+fullName+" for entering your name.");
+		return true;
+	}
+
+	//return false;
+}
 	;(function() {
 
 	})();
