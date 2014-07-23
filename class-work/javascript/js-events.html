@@ -3,12 +3,13 @@
 <head>
 	<title>Understanding Event & Event handler registration</title>
 	<style>
-	img{
-		display: none;
-	}
-	img[alt='game']{
-		display: block;
-	}
+	/*	img{
+			display: none;
+		}
+		img[alt='game']{
+			display: block;
+		}
+	*/
 	</style>
 </head>
 <body>
@@ -18,15 +19,17 @@
 		<p><abbr title="Cascading Style Sheets">CSS</abbr> allows complete and total control over the style of a hypertext document.</p>
 	</div>
 	<div>
-		<img src="images/photo-1.jpg" alt="game" width="200" height="100">
+		<img id="imgPlaceHolder" src="images/photo-1.jpg" alt="game" width="200" height="100">
+<!-- Not needed
 		<img src="images/photo-2.jpg" alt="nature" width="200" height="100">
 		<img src="images/photo-3.jpg" alt="abstract" width="200" height="100">
+		-->
 	</div>
 	<nav role="navigation">
 		<ul>
-			<li class="next"><a href="http://www.google.com" onclick="alert('Clicked');return false;">Mid century</a></li>
-			<li class="viewall"><a href="#">Garments</a></li>
-			<li class="viewall"><a href="#">Steel</a></li>
+			<li><a href="#" onclick="loadImg('photo-1')">Game</a></li>
+			<li><a href="#" onclick="loadImg('photo-2')">Nature</a></li>
+			<li><a href="#" onclick="loadImg('photo-3')">Abstract</a></li>
 		</ul>
 	</nav>
 	<form>
@@ -35,22 +38,28 @@
 	</form>
 
 <script>
-function validateName(evt) {
-	//console.log(typeof evt);
-	//console.log(evt.target);
 
-	var fullName = document.getElementById('fullName').value;
-	//alert(fullName);
-	if(fullName==""){
-		alert("Please Enter your Name: ");
-		evt.preventDefault();
-		return false;
+	function loadImg(imgName) {
+		var iph = document.getElementById('imgPlaceHolder');
+		iph.setAttribute('src','images/'+imgName+'.jpg');
 	}
-	else{
-		alert("Thank you "+fullName+" for entering your name.");
-		return true;
+
+	function validateName(evt) {
+		//console.log(typeof evt);
+		//console.log(evt.target);
+
+		var fullName = document.getElementById('fullName').value;
+		//alert(fullName);
+		if(fullName==""){
+			alert("Please Enter your Name: ");
+			evt.preventDefault();
+			return false;
+		}
+		else{
+			alert("Thank you "+fullName+" for entering your name.");
+			return true;
+		}
 	}
-}
 	;(function() {
 		var btn = document.getElementById('btnToClick');
 		btnToClick.addEventListener('click',validateName,false);
