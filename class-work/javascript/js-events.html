@@ -31,7 +31,7 @@
 	</nav>
 	<form>
 		<input id="fullName" name="fullName" />
-		<button name="btnToClick" onclick="return validateName();">Click me!</button>			
+		<button id="btnToClick" name="btnToClick">Click me!</button>			
 	</form>
 
 <script>
@@ -50,7 +50,8 @@ function validateName() {
 	//return false;
 }
 	;(function() {
-
+		var btn = document.getElementById('btnToClick');
+		btnToClick.addEventListener('click',validateName,false);
 	})();
 </script>
 </body>
