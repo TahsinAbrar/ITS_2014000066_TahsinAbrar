@@ -35,19 +35,21 @@
 	</form>
 
 <script>
-function validateName() {
+function validateName(evt) {
+	//console.log(typeof evt);
+	//console.log(evt.target);
+
 	var fullName = document.getElementById('fullName').value;
 	//alert(fullName);
 	if(fullName==""){
 		alert("Please Enter your Name: ");
+		evt.preventDefault();
 		return false;
 	}
 	else{
 		alert("Thank you "+fullName+" for entering your name.");
 		return true;
 	}
-
-	//return false;
 }
 	;(function() {
 		var btn = document.getElementById('btnToClick');
