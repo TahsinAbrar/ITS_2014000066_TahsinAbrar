@@ -26,10 +26,10 @@
 		-->
 	</div>
 	<nav role="navigation">
-		<ul>
-			<li><a href="#" onclick="loadImg('photo-1')">Game</a></li>
-			<li><a href="#" onclick="loadImg('photo-2')">Nature</a></li>
-			<li><a href="#" onclick="loadImg('photo-3')">Abstract</a></li>
+		<ul id="galleryNavigator">
+			<li><a href="images/photo-1.jpg">Game</a></li>
+			<li><a href="images/photo-2.jpg">Nature</a></li>
+			<li><a href="images/photo-3.jpg">Abstract</a></li>
 		</ul>
 	</nav>
 	<form>
@@ -39,9 +39,15 @@
 
 <script>
 
-	function loadImg(imgName) {
-		var iph = document.getElementById('imgPlaceHolder');
-		iph.setAttribute('src','images/'+imgName+'.jpg');
+	function loadImg(evt) {
+		 var iph = document.getElementById('imgPlaceHolder');
+		 var imgPath =typeof evt.target.href;
+		 var imgName= imgPath.split('/')[imgPath.split('/').length-1];
+		 alert(imgPath);
+		 iph.setAttribute('src',"images/"+imgName);
+		 	//return false;
+		console.log(evt.target.href);
+		evt.preventDefault();
 	}
 
 	function validateName(evt) {
@@ -63,6 +69,13 @@
 	;(function() {
 		var btn = document.getElementById('btnToClick');
 		btnToClick.addEventListener('click',validateName,false);
+		
+		var galleryNavigator = document.getElementById('galleryNavigator');
+		var lis = galleryNavigator.getElementsByTagName('LI');
+		for(i=0;i<lis.length;i++){
+			var anchor = lis[i].getElementsByTagName('a')[0];
+			anchor.addEventListener('click',loadImg,false);
+		}
 	})();
 </script>
 </body>
