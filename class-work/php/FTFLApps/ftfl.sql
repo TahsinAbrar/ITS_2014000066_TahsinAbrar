@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 10, 2014 at 12:01 PM
+-- Generation Time: Aug 11, 2014 at 10:23 AM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.9
 
@@ -78,7 +78,7 @@ CREATE TABLE IF NOT EXISTS `map_students_courses` (
   `student_id` int(11) NOT NULL,
   `course_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
 -- Dumping data for table `map_students_courses`
@@ -90,7 +90,8 @@ INSERT INTO `map_students_courses` (`id`, `student_id`, `course_id`) VALUES
 (3, 0, 0),
 (4, 2, 1),
 (5, 2, 2),
-(6, 2, 3);
+(6, 2, 3),
+(7, 30, 3);
 
 -- --------------------------------------------------------
 
@@ -139,7 +140,7 @@ CREATE TABLE IF NOT EXISTS `students` (
   `modified` datetime DEFAULT NULL,
   `created` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=20 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=31 ;
 
 --
 -- Dumping data for table `students`
@@ -154,7 +155,11 @@ INSERT INTO `students` (`id`, `ftfl_id`, `name`, `email`, `phone`, `day1_date`, 
 (15, 'ITS-2014000066', 'Tahsin Abrar', 'abrar.cste@gmail.com', '+8801717538525', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (16, 'ITS-2014000028', 'Ishrat Sharmin', 'ishrat@email.com', '+8801717454545', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (17, 'ITS-2014000088', 'piash', 'piash@email.com', '+8801845252525', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(18, 'ITS-2014000077', 'Zahid', 'zahid@email.com', '+8801845252154', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+(18, 'ITS-2014000077', 'Zahid', 'zahid@email.com', '+8801845252154', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(20, 'ITS-2014000066', 'Tahsin Abrar', 'abrar.cste@gmail.com', '+8801717538525', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(21, 'ITS-2014000066', 'Tahsin Abrar', 'abrar.cste@gmail.com', '+8801717538525', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(22, 'ITS-2014000066', 'Tahsin Abrar', 'abrar.cste@gmail.com', '+8801717538525', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(30, 'ITS-2014000044', 'Bappa', 'bappa@email.com', '+8801717151412', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 --
 -- Constraints for dumped tables
