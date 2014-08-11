@@ -27,8 +27,7 @@
                             $query= mysqli_query($con,"SELECT title FROM Courses");                        
                         ?>
         		<label>Course: </label> 
-        		<select>
-        			<option>Choose course</option>
+                        <select multiple>
                                 <?php 
                                 while ($data = mysqli_fetch_object($query)) {
                                     echo '<option>'.$data->title.'</option>';                                

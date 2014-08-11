@@ -24,15 +24,17 @@
         		<input type="text" name="studentPhone" id="studentPhone" placeholder="Your Phone" tabindex="4" />
         		<br/>
                         <?php
-                            $query= mysqli_query($con,"SELECT title FROM Courses");                        
+                            $sql="SELECT * FROM Courses";
+                            $query= mysqli_query($con,$sql);                        
                         ?>
         		<label>Course: </label> 
-        		<select>
+                        <select name="chosenCourse">
         			<option>Choose course</option>
                                 <?php 
                                 while ($data = mysqli_fetch_object($query)) {
-                                    echo '<option>'.$data->title.'</option>';                                
-                                }
+                                    ?>
+                                <option value="<?php echo $data->id;?>"><?php echo $data->title; ?></option>                              
+                               <?php }
                                 ?>        			
         		</select>
         		<br/>
@@ -41,7 +43,4 @@
         </form>
         
     </body>
-        <?php
-        
-        ?>
 </html>

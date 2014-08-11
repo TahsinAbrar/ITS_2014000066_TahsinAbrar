@@ -12,7 +12,7 @@ class Course {
     }
     public function course_title(){
         $course= mysqli_query($con,"SELECT title FROM Courses");
-        while ($data = mysql_fetch_object($course)) {
+        while ($data = mysqli_fetch_object($course)) {
             echo $data->title;
         }
     }
