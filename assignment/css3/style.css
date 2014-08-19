@@ -12,16 +12,16 @@ abbr{
 	font-weight: 700;
 }
 /* unvisited link */
-a:link {color: #fff;}
+a:link {color: rgb(0,136,0);}
 
 /* visited link */
-a:visited {color: #fff;}
+a:visited {color: blue;}
 
 /* mouse over link */
-a:hover {color: #ddd;text-decoration: underline;}
+a:hover {color: rgb(0,126,0);text-decoration: underline;}
 
 /* selected link */
-a:active {color: #ddd;text-decoration: underline;}
+a:active {color: blue;text-decoration: underline;}
 
 p.italic{font-style: italic;}
 
@@ -47,10 +47,28 @@ nav ul li a{
 	text-decoration: none;
 	color: #fff;			
 }
+nav ul li a:link {color: #fff;}
+nav ul li a:visited {color: #fff;}
+nav ul li a:hover {color: #ddd;text-decoration: underline;}
+nav ul li a:active {color: #ddd;text-decoration: underline;}
 ul.circle{list-style-type: circle;}
 ul.square{list-style-type: square;}
+
+#content{
+	width: 940px;
+	overflow: hidden;
+}
+.progress{
+	margin-left: 40px;
+}
+#mainContent{
+	width: 400px;
+	float: left;}
+#figure{width:540px; float: left;}
 .btn{
 	padding: 10px;background: #92eeff;
+	border-radius: 25px;
+	cursor: pointer;
 }
 .btn.success{background: rgb(0,136,0);color:#ddd;}
 .btn.reset{background: #ff4d4d;color:#ddd;}
@@ -71,6 +89,10 @@ ul.square{list-style-type: square;}
 #footerLink a{
 	padding: 0px 5px;
 }
+#footerLink a:link {color: #fff;}
+#footerLink a:visited {color: #fff;}
+#footerLink a:hover {color: #ddd;text-decoration: underline;}
+#footerLink a:active {color: #ddd;text-decoration: underline;}
 
 /* Registration Form Style */
 input[type="text"],input[type="email"],select {
