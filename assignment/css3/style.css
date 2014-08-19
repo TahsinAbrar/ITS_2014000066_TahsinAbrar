@@ -1,0 +1,33 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+body{
+	background: #ddd;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+abbr{
+	color: rgb(0,78,0);
+	font-weight: 700;
+}
+/* unvisited link */
+a:link {color: #0000FF;}
+
+/* visited link */
+a:visited {color: rgba(0,78,0, 0.5);}
+
+/* mouse over link */
+a:hover {color: #FF0000;text-decoration: underline;}
+
+/* selected link */
+a:active {color: #0000FF;text-decoration: underline;}
+
+p.italic{font-style: italic;}
+
+#wrap{
+	margin: 0 auto;
+	width: 840px;
+}
+
+nav ul{list-style: none;}
+nav ul li{display: inline-block;}
+nav ul li a{text-decoration: none;}
+ul.circle{list-style-type: circle;}
+ul.square{list-style-type: square;}
