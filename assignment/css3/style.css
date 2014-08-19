@@ -54,17 +54,21 @@ nav ul li a:active {color: #ddd;text-decoration: underline;}
 ul.circle{list-style-type: circle;}
 ul.square{list-style-type: square;}
 
-#content{
+.content{
 	width: 940px;
 	overflow: hidden;
 }
 .progress{
 	margin-left: 40px;
 }
-#mainContent{
+.mainContent{
 	width: 400px;
 	float: left;}
-#figure{width:540px; float: left;}
+#anotherContent{
+
+}
+.sidebar{width:540px; float: left;}
+.right{padding-right: 0px;}
 .btn{
 	padding: 10px;background: #92eeff;
 	border-radius: 25px;
