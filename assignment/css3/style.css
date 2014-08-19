@@ -12,16 +12,16 @@ abbr{
 	font-weight: 700;
 }
 /* unvisited link */
-a:link {color: #0000FF;}
+a:link {color: #fff;}
 
 /* visited link */
-a:visited {color: rgba(0,78,0, 0.5);}
+a:visited {color: #fff;}
 
 /* mouse over link */
-a:hover {color: #FF0000;text-decoration: underline;}
+a:hover {color: #ddd;text-decoration: underline;}
 
 /* selected link */
-a:active {color: #0000FF;text-decoration: underline;}
+a:active {color: #ddd;text-decoration: underline;}
 
 p.italic{font-style: italic;}
 
@@ -39,9 +39,17 @@ h1#companyName{float: left;width: 500px;}
 h4#slogan{
 	float: left;
 	width: 300px;
+	margin-top: 40px;
 }
 nav ul{list-style: none;}
-nav ul li{display: inline-block;padding: 5px 20px}
-nav ul li a{text-decoration: none;}
+nav ul li{display: inline-block;padding: 5px 20px;background: #056fdd;}
+nav ul li a{
+	text-decoration: none;
+	color: #fff;			
+}
 ul.circle{list-style-type: circle;}
 ul.square{list-style-type: square;}
+.btn{
+	padding: 10px;background: #ff4d4d;color:#ddd; 
+	
+}
