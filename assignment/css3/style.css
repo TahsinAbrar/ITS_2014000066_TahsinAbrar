@@ -24,6 +24,7 @@ p.italic{font-style: italic;}
 #wrap{
 	margin: 0 auto;
 	width: 840px;
+	background: #eee;
 }
 
 nav ul{list-style: none;}
