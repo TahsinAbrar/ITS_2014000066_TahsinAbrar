@@ -31,9 +31,17 @@ p.italic{font-style: italic;}
 	background: #eee;
 	padding: 5px 20px 30px 20px;
 }
-
+#headerPart{
+	width: 800px;
+	overflow:hidden;
+}
+h1#companyName{float: left;width: 500px;}
+h4#slogan{
+	float: left;
+	width: 300px;
+}
 nav ul{list-style: none;}
-nav ul li{display: inline-block;}
+nav ul li{display: inline-block;padding: 5px 20px}
 nav ul li a{text-decoration: none;}
 ul.circle{list-style-type: circle;}
 ul.square{list-style-type: square;}
