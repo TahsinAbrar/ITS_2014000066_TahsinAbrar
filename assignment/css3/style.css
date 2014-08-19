@@ -50,6 +50,24 @@ nav ul li a{
 ul.circle{list-style-type: circle;}
 ul.square{list-style-type: square;}
 .btn{
-	padding: 10px;background: #ff4d4d;color:#ddd; 
-	
+	padding: 10px;background: #92eeff;
+}
+.btn.success{background: rgb(0,136,0);color:#ddd;}
+.btn.reset{background: #ff4d4d;color:#ddd;}
+#footerPart{
+	background: #000;
+	width: 800px;
+	overflow: hidden;
+}
+.copyright{
+	float: left;
+	color: #ddd;
+	padding: 0px 15px;
+}
+#footerLink{
+	float: right;
+	margin-top:10px;
+}
+#footerLink a{
+	padding: 0px 5px;
 }
