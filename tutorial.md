@@ -8,3 +8,13 @@ Adding tutorial for using Github in PHPStorm
 
 
 
+
+Useful hotkeys with VCS 
+------------------------
+
+There are also a few hotkeys you’ll definitely find useful with version control systems. These include:
+
+Alt+BackQuote (`) to invoke VCS quick popup,
+Ctrl+K  to Commit project to VCS,
+Ctrl+T  to Update project from VCS, and
+Alt+Shift+C to View recent changes.
